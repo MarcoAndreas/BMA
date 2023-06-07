@@ -3,6 +3,7 @@ Being Bayesian about learning Gaussian Bayesian networks from incomplete data
 
 This GitHub repository contains R code that accompanies the paper:
 `Being Bayesian about learning Gaussian Bayesian networks from incomplete data'
+
 published in 
 the International Journal of Approximate Reasoning 
 (accepted in June 2023)
