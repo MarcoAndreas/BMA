@@ -6,8 +6,8 @@
 # R code for the Bayesian Model Averaging (BMA) approach
 # for Gaussian Bayesian networks with missing data
 
-# The corresponding paper has been submitted to  
-# The International Journal of Approximate Reasoning
+# paper to appear in the
+# International Journal of Approximate Reasoning
 
 # author: Marco Grzegorczyk (Groningen University, NL)
 # Email to: m.a.grzegorczyk@rug.nl

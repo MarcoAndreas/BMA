@@ -136,7 +136,7 @@ strMCMC_NOVEL <- function(Data,incidence,iterations,step_save, p_resample=1, fan
   inter_rev <- which(incidence - t(t(incidence)%*% ancest1)==1)
   re <- matrix(numeric(n*n),nrow=n)
   re[inter_rev] <- 1
-  re[which(colSums(incidence)>fan.in-1),] <- 0 # CORRECTED!!!???!!!
+  re[which(colSums(incidence)>fan.in-1),] <- 0 
   num_reversal <- sum(re)
   
   ##### total number of neighbour graphs:
@@ -149,7 +149,7 @@ strMCMC_NOVEL <- function(Data,incidence,iterations,step_save, p_resample=1, fan
   ### sample one of the three single edge operations
   random <- sample(1:total,1)
   
-  operation <- 0                           # memorise, if the single edge operation is (will be) an edge reversal
+  operation <- 0                           # if the single edge operation is (will be) an edge reversal
   if (random > total - num_reversal){
     operation <- 1}
   
@@ -325,7 +325,7 @@ strMCMC_NOVEL <- function(Data,incidence,iterations,step_save, p_resample=1, fan
       MU_m   = (v*mu  + m*rowMeans(data_added))  /(m+v)
       
     
-      MU_NEW =    mvrnorm(1,MU_m,SIGMA_NEW/(m+v) ) 
+      MU_NEW =    mvrnorm(1,MU_m,SIGMA/(m+v) ) 
       
 
       for (i in 1:m) {
