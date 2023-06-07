@@ -24,7 +24,7 @@ library(MASS)
 # MORE_FUNCTIONS.R
 
 # For example
-setwd("X:/BMA")
+setwd("X:/BMA-main")
 
 # Read the two provided files with R codes for Bayesian Model Averaging (BMA)
 source("MCMC_ALGORITHM.R")
@@ -96,7 +96,7 @@ f_thin = 100
 q = 0.05
 
 # Run the MCMC simulation
-out = strMCMC_NOVEL(data,DAG0,T_mcmc,f_thin,q)
+out = strMCMC_NOVEL(data,DAG,T_mcmc,f_thin,q)
   
 # out[[1]][[1]] is the adjacency matrix of the initial DAG
 # out[[2]][[1]] is the BGe score        of the initial DAG
