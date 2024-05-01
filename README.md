@@ -5,9 +5,8 @@ This GitHub repository contains R code that accompanies the paper:
 
 `Being Bayesian about learning Gaussian Bayesian networks from incomplete data'
 
-published in 
-the International Journal of Approximate Reasoning 
-(accepted in June 2023)
+published in  the International Journal of Approximate Reasoning 
+[[https://www.sciencedirect.com/science/article/pii/S0888613X23000853|Available here]]
 
 author: Marco Grzegorczyk
 
